@@ -1,8 +1,8 @@
-#Gopedia
+# Gopedia
 
 Very small Wikipedia scrapper to query short concepts written in Go. This is a project example I have developed to start working on the language.
 
-##Compile
+## Compile
 Assuming you have already [GIT](https://git-scm.com/) and [Golang](https://golang.org/) on your system.
 
 ```bash
@@ -11,7 +11,7 @@ cd gopedia
 go build
 ```
 
-##Usage
+## Usage
 
 ```bash
 ./gopedia Golang
