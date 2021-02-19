@@ -23,6 +23,7 @@ func main() {
 	url := fmt.Sprintf("https://%s.wikipedia.org/wiki/%s", *lang, query)
 	var times int = 1
 	c.OnHTML(".mw-parser-output", func(e *colly.HTMLElement) {
+		fmt.Println(fmt.Sprintf("%s\n", url))
 		e.ForEach("p", func(i int, elem *colly.HTMLElement) {
 			text := strings.TrimSpace(elem.Text)
 			for i := range forbidden {
